@@ -23,6 +23,11 @@ This application can be built and executed on QEMU as follows:
 
 To build for another board, change "qemu_x86" above to that board's name.
 
+```
+west build --pristine --build-dir build-qemu --board qemu_x86 samples/my_zephyr_app
+west build --build-dir build-qemu --target run
+```
+
 Sample Output
 =============
 
